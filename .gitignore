@@ -1,0 +1,20 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build output
+build/
+dist/
+out/
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,7 @@
+# PROVISIONAL: one control-role proposal.
+# Roles are grouped into profiles such as gamepad, media-remote, keyboard,
+# and pointer. Keep role names dotted and specific to their profile.
+name: "profile.role"
+description: ""
+applicable_control_kinds: [] # e.g. button, encoder, axis, touch
+example: "" # Describe a concrete hardware control using this role.

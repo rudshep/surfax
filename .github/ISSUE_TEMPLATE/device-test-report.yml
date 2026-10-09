@@ -1,0 +1,67 @@
+name: Device test report
+description: Report measurements or observations from a real device
+title: "Device test: "
+labels: ["device-report", "needs-measurement"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Exact device model
+      description: Include the full model identifier if available.
+      placeholder: e.g. Samsung GT-P7510
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Android/OS version and API level
+      placeholder: e.g. Android 4.2.2, API 17
+    validations:
+      required: true
+  - type: input
+    id: screen
+    attributes:
+      label: Screen size and resolution
+      placeholder: e.g. 7 in, 800 × 480
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Does the stock browser open a test page?
+      options:
+        - "Yes"
+        - "No"
+        - "Not tested"
+    validations:
+      required: true
+  - type: dropdown
+    id: apk
+    attributes:
+      label: Does the stock browser download an APK?
+      options:
+        - "Yes"
+        - "No"
+        - "Not tested"
+    validations:
+      required: true
+  - type: input
+    id: wifi
+    attributes:
+      label: Wi-Fi band
+      description: e.g. 2.4 GHz, 5 GHz, or unknown.
+  - type: dropdown
+    id: mdns
+    attributes:
+      label: Does mDNS discovery work?
+      options:
+        - "Yes"
+        - "No"
+        - "Not tested"
+    validations:
+      required: true
+  - type: textarea
+    id: surprising
+    attributes:
+      label: Anything surprising?
+      description: Include how you tested and relevant measurements.

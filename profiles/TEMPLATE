@@ -1,0 +1,21 @@
+# PROVISIONAL format: human-friendly device profile template.
+# Copy this file for a real device profile and replace the example values.
+model_id: ""
+friendly_name: ""
+device_class: "" # esp32 / android / ios / wince / other
+os_or_firmware_version: ""
+screen:
+  width: 0
+  height: 0
+  colour_order: "" # e.g. RGB or BGR
+  rotation: "" # e.g. 0, 90, 180, 270
+touch:
+  type: "" # e.g. resistive, capacitive, none
+  calibration_notes: ""
+hardware_controls:
+  buttons: []
+  leds: []
+  sensors: []
+known_quirks: []
+tested_by: ""
+date_tested: "" # YYYY-MM-DD

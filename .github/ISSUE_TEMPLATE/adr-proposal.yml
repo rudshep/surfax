@@ -1,0 +1,32 @@
+name: ADR proposal
+description: Propose an architecture decision
+title: "ADR: "
+labels: ["adr"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What is the problem or decision that needs to be made?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: List the options, including meaningful trade-offs.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Proposed decision
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Measurements beat opinions. Add observations, experiments, or references.
+    validations:
+      required: true
