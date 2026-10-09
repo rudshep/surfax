@@ -1,0 +1,26 @@
+name: New device profile
+description: Contribute a device profile
+title: "Profile: "
+labels: ["profile"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Link to or paste a profile based on [`profiles/TEMPLATE`](../../profiles/TEMPLATE).
+        Include the exact device model, OS or firmware version, and test date.
+  - type: input
+    id: profile-link
+    attributes:
+      label: Link to profile (optional)
+      placeholder: URL to a proposed profile file
+  - type: textarea
+    id: profile
+    attributes:
+      label: Profile contents
+      description: Paste the profile here if it is not linked.
+      render: yaml
+  - type: textarea
+    id: notes
+    attributes:
+      label: Testing notes
+      description: Describe what was tested and any known limitations.
